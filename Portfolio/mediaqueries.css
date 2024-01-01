@@ -1,0 +1,170 @@
+
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: fit-content;
+    
+    padding-top: 100px;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  #desktop-nav{
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile {
+    height: fit-content;
+    padding-top: 100px;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    justify-content: center;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .menu-links.open{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    /* border: 2px solid rgb(175, 175, 175); */
+    border: none;
+    border-radius: 8px;
+    /* background-color: rgba(150, 150, 150,0.3); */
+    transform-style: preserve-3d;
+    gap: 4px;
+    transform: perspective(500px) rotateY(340deg);  
+  }
+  .about-containers1{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact {
+    height: 40vh;
+  }
+  #profile {
+    height: fit-content;
+    margin-bottom: 2rem;
+    padding-top: 100px;
+  }
+  article {
+    font-size: 1rem;
+  }
+  .about-containers,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .menu-links a {
+    display: block;
+    padding: 6px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+
+  .menu-links.open{
+    transition: all 0.5s;
+    margin-right: -32px;
+    background-color: transparent;
+  }
+
+  .about-containers1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mode{ 
+    padding-left: 20px;
+    padding-top: 0;
+  }
+  .moon-icon{
+    height: 24px;
+  }
+  .toggle-dark,.toggle-light{
+    width: 30px;
+    height: 30px;
+  }
+  .mode-tooltip{
+    width: 60px;
+    text-align: center;
+    padding: 4px 6px;
+    font-size: 8px;
+    
+  }
+  .mini-project{
+    display: flex;
+  }
+  
+}
+
+
+@media screen and (max-width: 480px){
+  .about-containers1{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

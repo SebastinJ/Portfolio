@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sebastin's Portfolio</title>
+    <link  rel="stylesheet" href="style.css" id="light-style">
+    
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+      <div class="mode desktop">
+        <button class="toggle-dark">
+          <img class="moon-icon" src="./assets/moon-light.png" id="1" 
+          onclick="toggleStyles(); ">
+        </button>
+        <div class="mode-tooltip">View in Dark Theme</div>
+      
+        
+      </div>
+      <div class="logo">Sebastin J</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="mode desktop">
+        <button class="toggle-dark">
+          <img class="moon-icon" src="./assets/moon-light.png" id="1" 
+          onclick="toggleStyles(); ">
+        </button>
+        <div class="mode-tooltip">View in Dark Theme</div>
+      
+        
+      </div>
+      <div class="logo">Sebastin J</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about_pic.jpg" alt="Sebastin James profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sebastin J</h1>
+        <p class="section__text__p2">Web and Game Developer/Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sebastin-Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin-light.png"
+            alt="My LinkedIn profile"
+            class="icon light"
+            onclick="location.href='https://www.linkedin.com/in/sebastinj/'"
+          />
+          <img
+            src="./assets/github-light.png"
+            alt="My Github profile"
+            class="icon light"
+            onclick="location.href='https://github.com/SebastinJ'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/cover_image.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An engaging man and a good learner 
+              looking to put my skills and knowledge 
+              to use in an organization and build my career.
+            </p>
+          </div>
+          <div class="about-containers2 about-containers">
+            <div class="details-container details-container1">
+              <img
+                src="./assets/education-light.png"
+                alt="Education icon"
+                class="icon light"
+              />
+              <h3 class="edu-title">Education</h3>
+              <p>Bachelor of Science in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mathematics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 with 8.11 CGPA </br>2018-2021</p>
+            </div>
+            <div class="details-container details-container1">
+              <img
+                src="./assets/education-light.png"
+                alt="Education icon"
+                class="icon light"
+              />
+              <h3 class="edu-title">Education</h3>
+              <p>Master of Computer Application - pursuing </br>2022-2024</p>
+            </div>
+            <div class="details-container details-container1">
+              <img
+                src="./assets/experience-light.png"
+                alt="Experience icon"
+                class="icon light"
+              />
+              <h3 class="edu-title">Experience</h3>
+              <p>Experience with college and internship projects as a student.</p>
+            </div>
+            
+            <div class="details-container details-container1">
+              <img
+                src="./assets/knowledge-light.png"
+                alt="Game icon"
+                class="icon light"
+              />
+              <h3 class="edu-title">Skills</h3>
+              <p>Decision Making, Critical Thinking, Project management.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <br>
+      <p class="section__text__p1">I have a knowledge of</p>
+      <div class="experience-details-container">
+        <div class="about-containers1">
+          <div class="ex-details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css-3.png"
+                  alt="css icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/js.png"
+                  alt="JavaScript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c++.png"
+                  alt="c++ icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="python icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="ex-details-container">
+            <h2 class="experience-sub-title">Database</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="mysql icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sqlplus.png"
+                  alt="sqlplus icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Plus</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb-icon.png"
+                  alt="MongoDB icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="ex-details-container">
+            <h2 class="experience-sub-title">Frameworks & Environments</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="ReactJS icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nodejs.png"
+                  alt="NodeJS icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Git icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="ex-details-container">
+            <h2 class="experience-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/unreal-light.png"
+                  alt="Unreal icon"
+                  class="icon light"
+                />
+                <div>
+                  <h3>Unreal Engine 5</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/blender.png"
+                  alt="blender icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+        <p class="section__text__p1">And My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="skills-container">
+              <h2 class="experience-sub-title">Area of Expertise</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark-light.png"
+                    alt="Checkmark icon"
+                    class="icon light"
+                  />
+                  <div>
+                    <h3>Full Stack Development</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark-light.png"
+                    alt="Checkmark icon"
+                    class="icon light"
+                  />
+                  <div>
+                    <h3>Game Development</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark-light.png"
+                    alt="Checkmark icon"
+                    class="icon light"
+                  />
+                  <div>
+                    <h3>3D Modeling</h3>
+                  </div>
+                </article>
+                </div>
+              </div>
+            </div>
+          </div>  
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My </p>
+      <h1 class="title">Projects</h1>
+      <br>
+      <h2 class="project-heading">Internship Projects</h2>
+      <div class="experience-details-container">
+        
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/spotify-clone.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spotify Clone</h2>
+            <p class="project-description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              A music player app that not only mirrors the 
+              appearance of Spotify but also has all the 
+              fundamental features of official Spotify music player.</p>
+              <div class="tech-container">
+                <h2 class="tech">Technology</h2>
+                <p class="tech-description">
+                  HTML, CSS, ReactJS, NodeJS, MongoDB, Visual Studio Code, Git, Netlify
+                </p>
+              </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SebastinJ/Spotify-Clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Sebastin-nasotech.pdf')"
+              >
+                Certificate
+              </button>
+            </div>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/grand.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GRAND</h2>
+            <p class="project-description">&nbsp;&nbsp;
+              Developed an AI-based app during a 4-week virtual internship 
+              program in data science with Open Weaver Studio.</p>
+              <div class="tech-container">
+                <h2 class="tech">Technology</h2>
+                <p class="tech-description">
+                  Open Weaver Studio
+                </p>
+              </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://studio.openweaver.com/apps/seba29oct/GRAND/'"
+              >
+                Live
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/VI Certificate.pdf')"
+              >
+                Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="project-heading">Mini Projects</h2>
+      <div class="experience-details-container">
+    <div class="about-containers mini-project">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/ids.jpg"
+            alt="Mini-Project 1"
+            class="project-img mini"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Intrusion Detection System</h2>
+        <div class="text-description"><p class="project-description">
+          A Python-based Intrusion detection system involving 
+          advanced machine learning algorithms to detect suspicious 
+          activities on networks or systems.</p>
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            Python, Jupyter Notebook, Visual Studio Code
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/SebastinJ/Intrusion-Detection-System'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container mini-project-container">
+        <div class="article-container">
+          <img
+            src="./assets/cal.png"
+            alt="Mini-Project 2"
+            class="project-img mini"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Internal Mark Calculation</h2>
+        <div class="text-description"><p class="project-description">
+          A web-based application that calculates and keeps a record of students' 
+          marks, showcasing their performance in assignments and exams. 
+        </p>
+          
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            HTML, CSS, PHP, XAMPP, Visual Studio Code
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/SebastinJ/Internal-Mark-Calculation'"
+          >
+            Github
+          </button>
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/sat.png"
+            alt="Mini-Project 3"
+            class="project-img mini"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">SAT-CHAT</h2>
+        <div class="text-description"><p class="project-description">
+          A cloud-based chat application that allows people to join, 
+          converse, and develop conversations.
+        </p>
+          
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            HTML, CSS, JavaScript, Visual Studio Code, Render
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/SebastinJ/Sat-Chat'"
+          >
+            Github
+          </button>
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/ttt.png"
+            alt="Mini-Project 3"
+            class="project-img mini"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Tic - Tac - Toe</h2>
+        <div class="text-description"><p class="project-description">
+          A basic Tic Tac Toe game developed using the Pygame library in Python.
+          The game allows two players to take turns marking 'X' and 'O' on a 3x3 grid. 
+        </p>
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            PyGame, Python, Visual Studio Code
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/SebastinJ/Tic-Tac-Toe'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="project-heading">My Own Projects</h2>
+      <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/myworld.png"
+            alt="Own-Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">My World</h2>
+        <div class="text-description"><p class="project-description">&nbsp;&nbsp;&nbsp;&nbsp;
+          A 3D open-world landscape (Still in Development).</p>
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            Unreal Engine 5, Blender
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/3d.pdf')"
+          >
+            View
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/portfolio.gif"
+            alt="Own-Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">My Portfolio</h2>
+        <div class="text-description"><p class="project-description">&nbsp;
+          A portfolio about me developed and designed for educational 
+          purposes to gain knowledge and experience.</p>
+        </div>
+        <div class="tech-container">
+          <h2 class="tech">Technology</h2>
+          <p class="tech-description">
+            HTML, CSS, JavaScript, Netlify, Visual Studio Code, Git
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="certifications">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Certificates</h1>
+      <br>
+      <p class="section__text__p1">I have a Certificate in </p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="ex-details-container ">
+            <div class="certificate-container"> 
+              <article>
+                <img
+                  src="./assets/nasotech.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>Internship Completion Certificate in Naso Technologies PVT. LTD.</h3>
+                </div>
+
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/Sebastin-nasotech.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/openweaver.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>Internship Completion Certificate in Open Weaver and ICT Academy.</h3>
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/VI Certificate.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/udemy.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>CSS, JavaScript And PHP Complete Course For Beginners.</h3>
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/CSS-PHP-Udemy.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/udemy.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>Python Complete Course For Beginners.</h3>
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/Python-Udemy.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/udemy.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>Machine Learning- From Basics to Advanced.</h3>
+                  
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/ML-Udemy.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/microsoft.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>Create machine learning models.</h3>
+                  
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/ML-microsoft.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+              <article>
+                <img
+                  src="./assets/MongoDB.png"
+                  alt="certificate icon"
+                  class="icon certificate-icon"
+                />
+                <div>
+                  <h3>MongoDB Basics.</h3>
+                  
+                </div>
+                <button
+                  class="certificate-btn"
+                  onclick="window.open('./assets/mongodb-mongodb.pdf')"
+                   >
+                  View
+                </button>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/smartphone-light.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon light"
+          />
+          <p class="contact-p">7639200227</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email-light.png"
+            alt="Email icon"
+            class="icon contact-icon light"
+          />
+          <p class="contact-p">seba29oct@gmail.com</p>
+
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin-light.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon light"
+          />
+          <p><a href="https://www.linkedin.com/in/SebastinJ">LinkedIn/SebastinJ</a></p>
+        </div>
+        
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
